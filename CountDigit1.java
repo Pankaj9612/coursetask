@@ -1,25 +1,18 @@
+import java.util.Scanner;
 class CountDigit1
 {
 	public static void main(String[] args) 
 	{
-		int num=123;
-		int sum=0;
-		int dup=num;
-
-		int rem=num%10;
-		sum+=rem;
-		num/=10;
-
-		rem=num%10;
-		sum+=rem;
-		num/=10;
-
-		rem=num%10;
-		sum+=rem;
-		num/=10;
-
-		System.out.println(sum);
-		System.out.println(dup);
-
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter a Number: ");
+		int no=sc.nextInt();
+		int count=0;
+		while(no>0)
+		{
+			int rem=no%10;
+			count++;
+			no/=10;
+		}	
+		System.out.println(count);
 	}
 }
