@@ -1,12 +1,11 @@
 import java.util.Scanner;
 class UglyNo
 {
-	public static void main(String args[])
-	{
-		Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number: ");
 		int no=sc.nextInt();
-		while(no!=0)
+		while(no>1)
 		{
 			if(no%2==0)
 			{
@@ -20,19 +19,19 @@ class UglyNo
 			{
 				no/=5;
 			}
-			else
+			else 
 			{
 				break;
 			}
+
 		}
 		if(no==1)
 		{
-			System.out.println("It is ugly number..");
+			System.out.println("it is ugly no");
 		}
 		else
 		{
-			System.out.println("It is not ugly number..");
+			System.out.println("Its not a ugly no");
 		}
-
 	}
 }
