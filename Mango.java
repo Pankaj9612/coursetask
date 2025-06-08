@@ -5,18 +5,21 @@ class Mango
 	int price;
 
 
-	public void printName()
+	public Mango printName()
 	{
 		System.out.println("Name: "+name);
+		return this;
 	}
 
-	public void printPrice()
+	public Mango printPrice()
 	{
 		System.out.println("Price: "+price);
+		return this;
 	}
 
-	public void printOrigin()
+	public Mango printOrigin()
 	{
 		System.out.println("Origin: "+origin);
+		return this;
 	}
 }
