@@ -15,11 +15,7 @@ public class College extends University {
 
 	public College(String uname,String vc, String uloc,int code , String type,String collname, int collCode, int grade, int noOfDepts, String principal) {
 		
-		this.uname=uname;
-		this.vc=vc;
-		this.code=code;
-		this.utype=type;
-		this.uloc=uloc;
+		super(uname, vc, uloc, collCode, type);
 		
 		
 		this.collname = collname;
