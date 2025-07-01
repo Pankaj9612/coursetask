@@ -18,12 +18,7 @@ public class Developer extends SoftwareEngineer {
 	public Developer(String name, int empId, String company, String degree, int exp, double salary,
 			String techStack, int project,String role,String domain) 
 	{
-		this.name=name;
-		this.empId=empId;
-		this.company=company;
-		this.degree=degree;
-		this.exp=exp;
-		this.salary=salary;
+		super(name, empId, company, degree, exp, salary);
 		this.techStack=techStack;
 		this.project=project;
 		this.role=role;
