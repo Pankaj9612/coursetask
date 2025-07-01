@@ -16,17 +16,7 @@ public class Department extends College{
 			String utype,String collname, int collCode, int grade, 
 			int noOfDepts, String principal,String type,String hod,int lec,int noOfStudents,int seats)
 	{
-		this.uname = uname;
-		this.vc = vc;
-		this.uloc = uloc;
-		this.code = code;
-		this.utype = utype;
-		
-		this.collname = collname;
-		this.collCode = collCode;
-		this.grade = grade;
-		this.noOfDepts = noOfDepts;
-		this.principal = principal;
+		super(uname, vc, uloc, code, type, collname, collCode, grade, noOfDepts, principal);
 		
 		this.type=type;
 		this.hod=hod;
