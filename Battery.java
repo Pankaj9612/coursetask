@@ -1,29 +1,34 @@
-package application;
+package objectclass;
 
 public class Battery {
-	String name;
-	String type;
-	int cap;
+
+	String bname;
+	String bbrand;
+	double bprice;
+	int mah;
 	
 	
-	Battery()
-	{
-		
+	private void Battery() {
+		// TODO Auto-generated method stub
+
 	}
-	
-	Battery(String name,String type,int cap)
-	{
-		this.name=name;
-		this.type=type;
-		this.cap=cap;
-		
-		System.out.println("Batter loaded");
+
+
+	public Battery(String name, String brand, double price, int mah) {
+		super();
+		this.bname = name;
+		this.bbrand = brand;
+		this.bprice = price;
+		this.mah = mah;
 	}
 	
 	public void displayBattery()
 	{
-		System.out.println(name);
-		System.out.println(type);
-		System.out.println(cap);
+		System.out.println(bname);
+		System.out.println(bbrand);
+		System.out.println(bprice);
+		System.out.println(mah);
+		System.out.println();
 	}
+	
 }
