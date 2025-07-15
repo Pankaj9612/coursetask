@@ -1,65 +1,43 @@
-package application;
+package objectclass;
 
 public class Person {
+
 	String name;
 	int age;
 	double sal;
 	
-	Person()
-	{
-		
+	public Person() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Person(String name, int age, double sal) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.sal = sal;
 	}
 	
-	Person(String name,int age,double sal)
+	public String printname()
 	{
-		this.name=name;
-		this.age=age;
-		this.sal=sal;
-		
-	}
-	
-	public  String getname()
-	{
+		System.out.println(name);
 		return name;
 	}
 	
-	public void setname(String name)
+	public int printage()
 	{
-		this.name=name;
-	}
-	
-	public int getage()
-	{
+		System.out.println(age);
 		return age;
-		
-	}
-	
-	public void setage(int age)
-	{
-		this.age=age;
-	}
-	
-	public double sal()
-	{
-		return sal;
 	}
 	
 	public void setsal(double sal)
 	{
-		if(sal>0 && sal>100000)
-		{
-			System.out.println("you are  afford it");
-		}
-		else 
-		{
-			System.out.println("You not afford it");
-		}
+		this.sal=sal;
 	}
-	public void displayPerson()
+	
+	public void  displayperson()
 	{
-		System.out.println("name: "+name);
-		System.out.println("Age :"+age);
-		System.out.println("sal :"+sal);
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(sal);
 	}
 }
-
