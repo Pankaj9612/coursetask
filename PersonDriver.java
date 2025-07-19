@@ -1,11 +1,16 @@
-package application;
+package objectclass;
 
 public class PersonDriver {
-	public static void main(String[] args) {
-		Person p1= new Person("Pankaj",44,724646.58);
-		p1.setname("rohan");
-		p1.setage(32);
-		p1.setsal(1387465544.7);
-		p1.displayPerson();
+
+	 public static void main(String[] args) {
+		
+		 Person p1=new Person("pankaj",22,2356);
+		 
+		 System.out.println(p1);
+		 
+		 p1.printage();
+		 p1.printname();
+		 p1.setsal(4000);
+		 p1.displayperson();
 	}
 }
