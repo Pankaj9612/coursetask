@@ -1,8 +1,8 @@
-package application;
+package objectclass;
 
 public class A {
-	int a=10;
-	
+
+	int a=5;
 	public void displayA()
 	{
 		System.out.println(a);
